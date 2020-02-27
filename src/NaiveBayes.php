@@ -198,7 +198,9 @@ class NaiveBayes
 
                 if ($match) {
                     $testClass[$class]['computed'][] = reset($match)['value'];
-                }
+                }else{
+					return "Data Training Tidak Lengkap";
+				}
             }
 
             $testClass[$class]['result'] = 1; // init the result for the class
